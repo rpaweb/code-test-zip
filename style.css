@@ -1,0 +1,123 @@
+/* BODY style */
+body {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+  
+  /* Polka background pattern took from MagicPatterns. Link: https://www.magicpattern.design/tools/css-backgrounds/ */
+  background-image: radial-gradient(#444cf7 0.5px, #fff 0.5px);
+  background-size: 10px 10px;
+  border: 10px solid #000;
+}
+
+.container {
+  position: absolute;
+  display: table;
+  width: 100vw;
+  padding: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+.container > div {
+  float: left;
+  margin: 10px;
+  height: 100vh;
+  width: 45vw;
+  padding: 10px;
+  position: relative;
+}
+
+.div-input-result {
+  display: none;
+}
+
+.zip-form {
+  margin: 0 auto;
+  position: absolute;
+  top: 25%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  width: 95vw;
+  text-align: center;
+}
+
+#btn-execute {
+  width: 7rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+}
+
+#btn-execute:hover {
+  background-color: #2468bf;
+}
+
+input,
+button {
+  margin: 0;
+  padding: 1em;
+  font-size: 1rem;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 10px 0px #d8d8d8;
+  display: inline-block;
+}
+label {
+  margin: 25px;
+  display: block;
+  font-size: 3em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form-info {
+  margin: 30px;
+  font-weight: bold;
+}
+
+.results-card {
+  position: absolute;
+  top: 45%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  width: 45vw;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.results-card h2,
+.results-card ul,
+.results-card div {
+  padding: 20px;
+  margin: 50px;
+  border-radius: 0.5em;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 20px 1px #000;
+  -moz-box-shadow: 1px 1px 20px 1px #000;
+  box-shadow: 1px 1px 20px 1px #000;
+}
+.results-card h2 {
+  font-size: 2.5em;
+}
+.results-card ul {
+  text-align: left;
+}
+.results-card ul > li {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.results-card ul > li > span {
+  font-weight: bolder;
+}
+.results-card div > img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: -50px;
+}

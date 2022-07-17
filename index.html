@@ -2,14 +2,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>Zip Code</title>
-	<meta name="description" content="A frontend dev aptitude test by Deep Space Robots.">
+	<meta name="description" content="DSR/Ideaware Code Test by RPA.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
-	<script src="script.js"></script>
+  <div class="container">
+    <div class="div-input">
+      <div id="zip-form" class="zip-form">
+        <label for="zip_code">Zip Code</label>
+        <input type="text" name="zipCode" id="zipCode">
+        <button id="btn-execute">Search</button>
+        <p class="form-info">Enter a zip code in the text field, press the button, and see info about the code you entered.</p>
+      </div>
+    </div>
+    <div id="div-input-result" class="div-input-result">
+      <!-- Results showed when users hit the search button. Funcionality wrote in script.js -->
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 
